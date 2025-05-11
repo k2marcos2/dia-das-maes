@@ -1,20 +1,22 @@
 const perguntas = [
   {
-    pergunta: "Quando é comemorado o Dia das Mães no Brasil?",
-    opcoes: ["Segunda semana de maio", "Primeira semana de junho", "25 de dezembro"],
+    pergunta: "Qual é a data de aniversário do seu filho mais lindo e inteligente?",
+    opcoes: ["21 de março", "31 de agosto", "16 de março"],
     resposta: 0
   },
   {
-    pergunta: "Qual é a flor símbolo do Dia das Mães?",
-    opcoes: ["Rosa", "Girassol", "Orquídea"],
-    resposta: 0
-  },
-  {
-    pergunta: "O que é algo especial que você pode fazer pela sua mãe?",
-    opcoes: ["Dar carinho", "Ajudar nas tarefas", "Todas as anteriores"],
+    pergunta: "Qual é a data de aniversário do seu filho que se esforça muito para ser melhor que o irmão mais velho? 😂 (brincadeira!)",
+    opcoes: ["21 de março", "16 de março", "31 de agosto"],
     resposta: 2
+  },
+  {
+    pergunta: "Qual é a data de aniversário do mais bagunceiro?",
+    opcoes: ["31 de agosto", "16 de março", "21 de março"],
+    resposta: 1
+
   }
 ];
+
 
 let indice = 0;
 
@@ -37,12 +39,12 @@ function verificarResposta(i) {
   const feedback = document.getElementById("feedback");
 
   if (i === correta) {
-    feedback.textContent = "✅ Resposta correta!";
+    feedback.textContent = "✅ exatamente!🙃🙂";
     indice++;
     if (indice < perguntas.length) {
       setTimeout(carregarPergunta, 1500);
     } else {
-      feedback.textContent = "🎉 Você acertou tudo! Agora clique no presente!";
+      feedback.textContent = "🎉 Você acertou tudo gatona! Agora clique no presente!";
       document.getElementById("question").textContent = "";
       document.getElementById("options").innerHTML = "";
 
@@ -51,13 +53,13 @@ function verificarResposta(i) {
       document.getElementById("botaoSurpresa").disabled = false;
     }
   } else {
-    feedback.textContent = "❌ Ops! Tente de novo.";
+    feedback.textContent = "❌ como assim?.";
   }
 }
 
 function mostrarMensagem() {
   document.getElementById("mensagemEspecial").textContent =
-    "🎁 Parabéns! Mãe, você é um presente na minha vida. Feliz Dia das Mães! 💖";
+    "Mãe, você é a nossa maior professora. Feliz Dia das Mães! Te amamos muito, lindona! 💖"
 }
 
 window.onload = carregarPergunta;
