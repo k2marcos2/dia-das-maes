@@ -43,7 +43,10 @@ function verificarPar() {
     acertos++;
     if (acertos === emojis.length) {
       document.getElementById("mensagemFinal").textContent =
-        "🎉 Parabéns! Você encontrou todos os pares! Feliz Dia das Mães! 💖";
+        "🎉 Parabéns! Você encontrou todos os pares! Agora prepare-se para o quiz!";
+      setTimeout(() => {
+        window.location.href = "indexquiz.html";
+      }, 1000);
     }
     resetarCartas();
   } else {
