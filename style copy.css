@@ -1,0 +1,47 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff69b4;
+}
+
+.game-board {
+  width: 360px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background-color: #ffb6c1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card.revelada {
+  background-color: #fff;
+  cursor: default;
+}
+
+.card.emoji {
+  pointer-events: none;
+}
+
+#mensagemFinal {
+  font-size: 1.2rem;
+  color: #e91e63;
+  margin-top: 20px;
+}

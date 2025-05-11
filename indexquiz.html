@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dia das Mães - Jogos e Brincadeiras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎉 Feliz Dia das Mães! 🎉</h1>
+    <p>Divirta-se com jogos e surpresas para homenagear sua mãe!</p>
+  </header>
+
+  <main>
+    <section class="quiz">
+      <h2>💖 Quiz Especial</h2>
+      <p id="question">Carregando pergunta...</p>
+      <div id="options"></div>
+      <p id="feedback"></p>
+    </section>
+
+    <section class="surpresa" id="surpresa" style="display: none;">
+      <h2>🎁 Surpresa!</h2>
+      <button id="botaoSurpresa" onclick="mostrarMensagem()" disabled>
+        Clique para uma mensagem especial
+      </button>
+      <p id="mensagemEspecial"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com carinho 💐</p>
+  </footer>
+
+  <script src="base.js"></script>
+</body>
+</html>
